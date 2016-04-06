@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import styles from './World.css';
 
-class World extends React.Component{
-  render(){
-    return <h1>World</h1>
-  }
+class World extends React.Component {
+        render() {
+            return <h1 className={styles.test}>World</h1>;
+        }
 }
+
 export default World;
