@@ -14,5 +14,5 @@ const world = document.querySelector('#world');
 
 //Render each Component to the DOM
 //ReactDOM.render(<Component/>, dom-node);
-ReactDOM.render(<Hello />, hello);
+ReactDOM.render(<Hello name="Test" />, hello);
 ReactDOM.render(<World />, world);
