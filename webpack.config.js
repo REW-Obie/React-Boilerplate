@@ -13,7 +13,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'react']
+          presets: ['es2015', 'stage-0', 'react']
         }
       },
       {
@@ -21,6 +21,13 @@ module.exports = {
         loaders:[
           'style?sourceMap',
           'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+        ]
+      },
+      {
+        test: /\.php$/,
+        loaders:[
+          'html-minify',
+          'php-loader'
         ]
       }
     ]
