@@ -14,7 +14,7 @@ describe('<World />', () => {
     });
 
     it('renders className', () => {
-        const wrapper = shallow(<World className="test" />);
+        const wrapper = shallow(<World styleName="test" />);
         assert.ok(wrapper.is('.test'), 'should contain className');
     });
 });

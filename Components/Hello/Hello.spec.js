@@ -14,7 +14,7 @@ describe('<Hello />', () => {
     });
 
     it('renders className', () => {
-        const wrapper = shallow(<Hello className="test" />);
+        const wrapper = shallow(<Hello styleName="test" />);
         assert.ok(wrapper.is('.test'), 'should contain className');
     });
 });
