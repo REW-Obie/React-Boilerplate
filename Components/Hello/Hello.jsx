@@ -8,5 +8,4 @@ class Hello extends React.Component {
         }
 }
 
-export default Hello;
 export default CSSModules(Hello, styles);

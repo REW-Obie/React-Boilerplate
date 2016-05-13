@@ -8,5 +8,4 @@ class World extends React.Component {
         }
 }
 
-export default World;
 export default CSSModules(World, styles);
